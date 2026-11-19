@@ -3,12 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba de pagina </title>
-
-        <link rel="stylesheet" href="style.css">
+    <title>Dessa Lashes| Miradas que Enamoran</title>
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tu archivo CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>La banana</h1>
-    
+
+    <!-- Navegación -->
+    <header class="navbar">
+        <div class="logo">Dessa<span>Lashes</span></div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Técnicas</a>
+            <a href="#galeria">Trabajos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content fade-in">
+            <span class="subtitle">ESPECIALISTAS EN EXTENSIONES DE PESTAÑAS</span>
+            <h1>Realza la belleza natural de tu mirada</h1>
+            <p>Diseños personalizados, ligeros y duraderos hechos a la medida de tus ojos. Despierta lista cada mañana.</p>
+            <a href="https://wa.me/5649948037?text=Hola,%20me%20gustaría%20agendar%20una%20cita%20para%20pestañas" target="_blank" class="btn-primary">
+                <i class="fab fa-whatsapp"></i> Agendar mi cita
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios / Técnicas -->
+    <section id="servicios" class="services">
+        <h2 class="section-title">Nuestras Técnicas</h2>
+        <p class="section-desc">Evaluamos la forma de tu ojo y la salud de tu pestaña natural para recomendarte el set ideal.</p>
+        
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-icon">✨</div>
+                <h3>Efecto Clásico</h3>
+                <p>Aplicación 1 a 1. Ideal si buscas un acabado natural, como si llevaras máscara de pestañas perfecta todo el día.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🌸</div>
+                <h3>Efecto Híbrido</h3>
+                <p>La combinación perfecta entre técnica clásica y abanicos de volumen para lograr textura, densidad y sutileza.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">👑</div>
+                <h3>Volumen Ruso</h3>
+                <p>Abanicos ultrafinos hechos a mano para una mirada glamurosa, tupida y dramática sin dañar tu pestaña natural.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Trabajos -->
+    <section id="galeria" class="gallery-section">
+        <h2 class="section-title">Nuestros Trabajos</h2>
+        <p class="section-desc">Resultados reales en nuestras clientas. Pasa el cursor sobre las fotos para ver el detalle.</p>
+        
+        <div class="gallery-grid">
+            <!-- Nota: Reemplaza los enlaces 'src' con las rutas de tus propias fotos (ej. img/trabajo1.jpg) -->
+            <div class="gallery-item">
+                <img src="img/trabajo1.jpg" alt="Pestañas Clásicas">
+                <div class="overlay">
+                    <h4>Set Clásico</h4>
+                    <p>Curvatura C • 11mm</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/trabajo2.jpg" alt="Efecto Híbrido">
+                <div class="overlay">
+                    <h4>Efecto Híbrido</h4>
+                    <p>Diseño Cat Eye</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/trabajo 3.jpg" alt="Volumen Ruso">
+                <div class="overlay">
+                    <h4>Volumen Ruso</h4>
+                    <p>Mirada Intensa</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/trabajo4.jpg" alt="Lifting de Pestañas">
+                <div class="overlay">
+                    <h4>Efecto Wispy</h4>
+                    <p>Textura y Volumen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto y Redes -->
+    <section id="contacto" class="contact-section">
+        <div class="contact-box">
+            <h2>¿Lista para transformar tu mirada?</h2>
+            <p>Escríbenos directamente por WhatsApp para consultar disponibilidad o síguenos en redes para ver más resultados y promociones del mes.</p>
+            
+            <div class="social-buttons">
+                <a href="https://wa.me/5649948037" target="_blank" class="btn-social whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://www.instagram.com/dessa.lashes?lqvp=Ym1tNGVlZWh1Z2lo" target="_blank" class="btn-social instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://facebook.com/tu_pagina" target="_blank" class="btn-social facebook">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/?text=Hola,%20quiero%20información%20sobre%20las%20pestañas" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2026 Dessa Lashes. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
